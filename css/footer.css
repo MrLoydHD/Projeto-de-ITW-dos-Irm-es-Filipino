@@ -1,0 +1,18 @@
+        .trollagem {
+            height: 130%;
+            width: 130%;
+            opacity: 50%;
+        }
+        
+        .car {
+            height: 25px;
+        }
+        
+        .accordion-button {
+            opacity: 50%!important;
+            color: pink!important;
+        }
+        
+        .accordion.collapsed::after {
+            opacity: 100%;
+        }
