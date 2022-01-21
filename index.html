@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
+    <link href="./css/scrollbar.css" rel="stylesheet" />
+    <link href="./css/cardCarousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/jquery-ui/jquery-ui.css">
+    <link href="./css/background.css" rel="stylesheet" />
+
+
+    <title>Página Inicial</title>
+    <style>
+        .carousel {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .carousel-item {
+            z-index: -100;
+            height: 480px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .carousel-item-prof:nth-child(1) {
+            background-image: url('https://mb.web.sapo.io/9644ccedd8923e117ecd2d8431295b77d06b4510.jpg');
+        }
+        
+        .carousel-item-prof:nth-child(2) {
+            background-image: url('https://staticp.0aos100.pt/posts/1633549094f1hamiltonvetteljpg_1980x600.jpg');
+        }
+        
+        .carousel-item-prof:nth-child(3) {
+            background-image: url('https://mb.web.sapo.io/20bec17326e461c884b7ec6ede85727b32cffb1e.jpg');
+        }
+        
+        .carousel-item-prof:nth-child(4) {
+            background-image: url('https://static.globalnoticias.pt/tsf/image.jpg?brand=TSF&type=generate&guid=1fb55adf-d0a0-451a-bfa5-a78033ecb357');
+        }
+        
+        .vl {
+            border-left: 1px solid;
+            height: 30px;
+            color: #808080;
+            margin-left: 16px;
+            margin-right: 8px
+        }
+        
+        .red {
+            background-color: #e70a0a
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png" height="25" width="90" /></a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars text-white"></i>
+          </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown dropdown-mega position-static">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Content</a>
+                        <div class="dropdown-menu shadow bg-dark">
+                            <div class="container container-nav">
+                                <div class="card-nav bg-dark">
+                                    <a href="./drivers.html">
+                                        <div class="face face1" style="background-image: url(https://midias.correiobraziliense.com.br/_midias/jpg/2020/11/16/cbifot151120202910-6400779.jpg); background-size: cover;">
+                                            <div class="content">
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>Drivers</h3>
+                                                <p>This is where I network and build my professional protfolio.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-nav bg-dark">
+                                    <a href="./Constructors.html">
+                                        <div class="face face1" style="background-image: url(https://www.formula1.com/content/fom-website/en/teams/Mercedes/_jcr_content/image16x9.img.1024.medium.jpg); background-size: cover;">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>Constructors</h3>
+                                                <p>This is where I read news and network with different social groups.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-nav bg-dark">
+                                    <a href="https://twitter.com/AdamDipinto">
+                                        <div class="face face1" style="background-image: url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/12/14/16394778106166.jpg); background-size: cover;">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>Champions</h3>
+                                                <p>This is where I share code and work on projects.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-nav bg-dark">
+                                    <a href="./circuits.html">
+                                        <div class="face face1" style="background-image: url(https://cdn-wp.thesportsrush.com/2020/07/Untitled-design-72-1.jpg); background-size: cover;">
+                                            <div class="content">
+
+                                            </div>
+                                        </div>
+                                        <div class="face face2">
+                                            <div class="content">
+                                                <h3>Circuits</h3>
+                                                <p>This is where I share code and work on projects.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Tickets</a>
+                    </li>
+                </ul>
+                <form class="ms-auto d-flex">
+                    <div class="input-group-text p-0">
+                        <select id="searchSelect" class="form-select form-select shadow-none bg-light border-0">
+                          <option id="All" data-toggle="op" aria-selected="true">All</option>
+                          <option id="Drivers" data-toggle="op" aria-selected="false">Drivers</option>
+                          <option id="Construtors" data-toggle="op" aria-selected="false">Construtors</option>
+                          <option id="Champions" data-toggle="op" aria-selected="false">Champions</option>
+                          <option id="Circuits" data-toggle="op" aria-selected="false">Circuits</option>
+                        </select>
+                        <input id="searchbar" class="form-control border-0 mr-2" type="text" placeholder="Search" aria-label="Search" name="searchbar" type="text" placeholder="Pesquisar">
+                        <button class="btn btn-danger red" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+                <div class="vl"></div>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn text-decoration-none px-3 me-2" style="color: white" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      Login
+                    </button>
+                    <button type="button" class="btn text-decoration-none btn-danger red px-3 me-2" style="color: white" data-bs-toggle="modal" data-bs-target="#exampleModal"> Sign up for free</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--NavBar end-->
+
+
+    <div id="carouselExample" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active carousel-item-prof">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Títulos do Mundial de Fórmula 1 decidem-se na última prova após vitória de Hamilton no emocionante GP da Arábia Saudita -</h5>
+                    <p> Motores - SAPO Desporto</p>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-prof">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fórmula 1 regressa à Sport TV em 2022</h5>
+                    <p>0 aos 100 / Notícias em alta rotação</p>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-prof">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Títulos do Mundial de Fórmula 1 decidem-se na última prova após vitória de Hamilton no emocionante GP da Arábia Saudita - Motores - SAPO Desporto</h5>
+                    <p>SAPO Desporto</p>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-prof">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hamilton bate Verstappen e adia título de campeão mundial de Fórmula 1</h5>
+                    <p>TSF</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Card News-->
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="mb-3 text-center" style="font-family: 'Faster One'; color: rgb(209, 12, 12); font-size:70px;">Latest News</h3>
+                </div>
+
+                <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner carousel-inner-css">
+                        <div class="carousel-item active carousel-item-css">
+                            <div class="img-wrapper"><img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/WinterDecember/20223-wide-comp.jpg.transform/9col/image.jpg" class="d-block w-100" alt="..."> </div>
+                            <h5 class="card-title">10 things every Formula 1 fan should be excited for in 2022</h5>
+                            <button href="#" class="btn btn-danger crs-btn">Read More</button>
+                        </div>
+
+
+                        <!--Não EDITADO-->
+                        <div class="carousel-item carousel-item-css">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="https://d2n9h2wits23hf.cloudfront.net/image/v1/static/6057949432001/aa07bce6-6fbe-4b91-b117-0d1bddbe5e29/683dc42b-dab0-40e2-b81c-07a0ab3db743/1280x720/match/image.jpg?Key-Pair-Id=APKAINLZLPQXMZG2IC5A&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMm45aDJ3aXRzMjNoZi5jbG91ZGZyb250Lm5ldC9pbWFnZS92MS9zdGF0aWMvNjA1Nzk0OTQzMjAwMS9hYTA3YmNlNi02ZmJlLTRiOTEtYjExNy0wZDFiZGRiZTVlMjkvNjgzZGM0MmItZGFiMC00MGUyLWI4MWMtMDdhMGFiM2RiNzQzLzEyODB4NzIwL21hdGNoL2ltYWdlLmpwZyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2NDIwNjU1NTB9fX1dfQ__&Signature=DDcYHrCv3X0ZLdQxPMvaYW~a-tUBSxeau4TA-lZPXo5d2P7h4wC2ypdyUvjpeDH3jWYp7BetwtBOU8LocPIeWgc8FOypLaRNus6Iz9e8Fab-hcN3p0fq5y0zsU-HY0w2A0m3i9PIj3hpvdP93BNKVRzQi-MU8TG-cpI3E86fk0Leb2zRAna0LY3kCUYTiF7bm3nwAubUS9Jtulzmh3cWArzpD~7qIR--8ltihxLe2mYG4vtsFG9tCGixqBkDJwcozj3DSyIgAtoou0yGLnFetKFsmwjMgjkmt5HsAULfVkA9BcbzjeF6~fGtdfvJzkfrCc1Nbajk5qspufjBtjD2JQ__"
+                                        class="d-block w-100" alt="..."> </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">MUST-SEE: Why 2021 was a season like no other</h5>
+                                    <a href="https://www.formula1.com/en/latest/article.must-see-why-2021-was-a-season-like-no-other.2gpCHLW3ElKlX8ovrDIMfp.html" class="btn btn-danger red mt-auto align-self-start" target="blank">Read More22</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-css">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/WinterDecember/2021QUIZquesion-temp.jpg.transform/9col/image.jpg" class="d-block w-100" alt="..."> </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">How much do you remember of the 2021 F1 season? It's the Big Formula 1 Quiz of the year!</h5>
+
+                                    <a href="https://www.formula1.com/en/latest/article.how-much-do-you-remember-of-this-f1-season-its-the-big-formula-1-quiz-of.5VfxTpAAIujs0JJ3hlKHGi.html" class="btn btn-danger red mt-auto align-self-start">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-css">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="https://d2n9h2wits23hf.cloudfront.net/image/v1/static/6057949432001/e92f84d4-bc96-4b48-a17d-d91722bfcdfe/ce4fa758-bbdc-48d9-bd45-7b177d3a9d6c/997x516/match/image.jpg" class="d-block
+                                        w-100" alt="..."> </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">WATCH: Pirate Seb, seething Sainz and napping Norris – Enjoy the funniest moments from the 2021 season</h5>
+                                    <a href="https://www.formula1.com/en/latest/article.watch-pirate-seb-seething-sainz-and-napping-norris-enjoy-the-funniest.7q5jMfErUDU92DIXf1VABO.html" class="btn btn-danger red mt-auto align-self-start">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-css">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/WinterDecember/GettyImages-1340263443.jpg.transform/9col/image.jpg" class="d-block w-100" alt="..."> </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">8 reasons 2021 will go down in F1 history as one of the classic seasons</h5>
+
+                                    <a href="https://www.formula1.com/en/latest/article.8-reasons-2021-will-go-down-in-f1-history-as-one-of-the-classic-seasons.2vXjkjqdBOjTAnNo2p2doo.html" class="btn btn-danger red mt-auto align-self-start">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-css">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/WinterDecember/GettyImages-1235070056.jpg.transform/9col/image.jpg" class="d-block w-100" alt="..."> </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">HAMILTON VS VERSTAPPEN: Why their rivalry has the potential to be the greatest in F1 history</h5>
+
+                                    <a href="https://www.formula1.com/en/latest/article.hamilton-vs-verstappen-why-their-rivalry-has-the-potential-to-be-the.71aeZ3mOLHeW4BbHGGKY2H.html" class="btn btn-danger red mt-auto align-self-start">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-css">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/WinterDecember/GettyImages-1307049906.jpg.transform/9col/image.jpg" class="d-block w-100" alt="..."> </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">EXCLUSIVE: The Top 10 F1 drivers of 2021 – as chosen by the drivers</h5>
+
+                                    <a href="https://www.formula1.com/en/latest/article.exclusive-the-top-10-f1-drivers-of-2021-as-chosen-by-the-drivers.6DWHaJ3vf5A3jc7hO9ivkz.html" class="btn btn-danger red mt-auto align-self-start">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-css">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/WinterDecember/F1_Tech_Tuesday%20END%20OF%202021.jpg.transform/9col/image.jpg" class="d-block w-100" alt="..."> </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">TECH TUESDAY: Most improved, best ‘bang for buck’ and more – it’s our 2021 star car awards</h5>
+
+                                    <a href="https://www.formula1.com/en/latest/article.tech-tuesday-most-improved-best-bang-for-buck-and-more-its-our-2021-star-car.xNcWcbmJMvh8U88pxTHDW.html" class="btn btn-danger red mt-auto align-self-start">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-css">
+                            <div class="card">
+                                <div class="img-wrapper"><img src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2021manual/WinterDecember/GettyImages-1306709977.jpg.transform/9col/image.jpg" class="d-block w-100" alt="..."> </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">REVEALED: F1’s team bosses choose their Top 10 drivers of 2021</h5>
+
+                                    <a href="https://www.formula1.com/en/latest/article.revealed-f1s-team-bosses-choose-their-top-10-drivers-of-2021.1sK8ysV0LK0MIbeNsHAkgY.html" class="btn btn-danger red mt-auto align-self-start">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-control-prev-css" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-control-next-css" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Modal Register-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><img src="./Imagens/FIA_F1/f1_logo_red.svg" alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section id="contact">
+                        <div class="container-lg">
+                            <div class="text-center">
+                                <h1 style="font-family: 'Faster One'; color: rgb(209, 12, 12);">Register</h1>
+                            </div>
+                            <div class="row justify-content-center my-5">
+                                <div class="col-lg-9">
+                                    <form class="needs-validation" name="FichaInscricao" novalidate method="POST">
+                                        <div class="input-group mb-4">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-envelope-fill text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating" style="width: 400px;">
+                                                <input type="email" class="form-control" data-bind="value:email" id="email" placeholder="name@example.com">
+                                                <label for="floatingInput">Email address</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-person-fill text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating" style="width: 400px;">
+                                                <input type="text" id="nome" data-bind="value:nome" class=" form-control" placeholder="e.g. Mario" />
+                                                <label for="floatingInput">Name</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-eye-slash text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating" style="width: 400px;">
+                                                <input type="password" data-bind="value:password" class="form-control" id="floatingPassword1" placeholder="Password">
+                                                <label for="floatingPassword1">Password</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Your safe-key.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-eye-slash text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating" style="width: 400px;">
+                                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword">Confirm Password</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Literally the same thing.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group" style="width: 482px;">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-eye-slash text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating" style="width: 400px;">
+                                                <input type="date" class="form-control" id="floatingDate" placeholder="Nascimento">
+                                                <label for="floatingDate">Data de Nascimento</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="BirthDate">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 text-center">
+                                            <input type="Submit" name="submitBtn" class="btn btn-danger" value="Enviar" class="btn btn-danger" id="submeter1" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Modal Register-->
+    <!--Modal Login-->
+    <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1"><img src="./Imagens/FIA_F1/f1_logo_red.svg" alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section id="contact">
+                        <div class="container-lg">
+                            <div class="text-center">
+                                <h1 style="font-family: 'Faster One'; color: rgb(209, 12, 12);">Login</h1>
+                            </div>
+                            <div class="row justify-content-center my-5">
+                                <div class="col-lg-9">
+                                    <form class="needs-validation" name="FichaInscricao" novalidate method="POST">
+                                        <div class="input-group mb-4">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-envelope-fill text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating" style="width: 400px;">
+                                                <input type="email" class="form-control" data-bind="value:email" id="email" placeholder="name@example.com">
+                                                <label for="floatingInput">Email address</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-eye-slash text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating" style="width: 400px;">
+                                                <input type="password" data-bind="value:password" class="form-control" id="floatingPassword2" placeholder="Password">
+                                                <label for="floatingPassword2">Password</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Your safe-key.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 text-center">
+                                            <input type="Submit" name="submitBtn" class="btn btn-danger" value="Enviar" class="btn btn-danger" id="submeter" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Login-->
+    <div class="accordion accordion-flush fixed-bottom" id="accordionFlushExample">
+        <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <img src="./Imagens/Carros 2020_2021/Alfa Romeo Racing.png" class="car">
+                    Made with  <i class="fa fa-heart-o text-danger"></i> by us to JSP
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <!-- Footer -->
+                    <footer class="bg-dark text-center text-light ">
+                        <!-- Grid container -->
+                        <div class="container pb-2 pt-2">
+                            <!-- Section: Links -->
+                            <section class="">
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                                        <h5 class="text-uppercase text-start">Sponsors</h5>
+                                        <div class="container">
+                                            <div class="row mb-4">
+                                                <div class="col "><img class="trollagem" src="./Imagens/Sponsors/188.png"></div>
+                                                <div class="col "><img class="trollagem" src="./Imagens/Sponsors/amg.png"></div>
+                                                <div class="col "><img class="trollagem" src="./Imagens/Sponsors/aws.png"></div>
+                                                <div class="col "><img class="trollagem" src="./Imagens/Sponsors/citi.png"></div>
+                                                <div class="col "><img class="trollagem" src="./Imagens/Sponsors/heineken.png"></div>
+                                                <div class="col "><img class="trollagem" src="./Imagens/Sponsors/emirates.png"></div>
+                                                <div class="col "><img class="trollagem" src="./Imagens/Sponsors/liqui-moly.png"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><img src="./Imagens/Sponsors/expo.png" class="trollagem"></div>
+                                                <div class="col"><img src="./Imagens/Sponsors/pirelli.png" class="trollagem"></div>
+                                                <div class="col"><img src="./Imagens/Sponsors/dhl.png" class="trollagem"></div>
+                                                <div class="col"><img src="./Imagens/Sponsors/expo.png" class="trollagem"></div>
+                                                <div class="col"><img src="./Imagens/Sponsors/crypto.com.png" class="trollagem"></div>
+                                                <div class="col"><img src="./Imagens/Sponsors/petronas.png" class="trollagem"></div>
+                                                <div class="col"><img src="./Imagens/Sponsors/aramco.png" class="trollagem"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                        <h5 class="text-uppercase text-start">Links</h5>
+
+                                        <ul class="list-unstyled mb-0">
+                                            <div class="col-5 offset-1 text-start">
+                                                <div <a name="" id="" class="btn btn-outline-light  href=" # " role="button ">
+                                                </a>Login</div>
+                                        </div>
+                                        <div class="col-5 offset-1 text-start ">
+                                            <a href="#! " class="text-light text-decoration-none ">Hub</a>
+                                        </div>
+                                        <div class="col-5 offset-1 text-start ">
+                                            <a href="#! " class="text-light text-decoration-none ">Circuits</a>
+                                        </div>
+                                        <div class="col-5 offset-1 text-start ">
+                                            <a href="#! " class="text-light text-decoration-none ">Champions</a>
+                                        </div>
+                                        <div class="col-5 offset-1 text-start ">
+                                            <a href="#! " class="link-light text-decoration-none ">Drivers</a>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <!--Grid column-->
+            
+                                <!--Grid column-->
+                                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                                    <h5 class="text-uppercase ">Social Media </h5>
+            
+                                    <ul class="list-unstyled mb-2 ">
+                                        <li>
+                                            <a class="btn btn-primary mb-2 " style="background-color: #3b5998; width: 41px; " href="#! " role="button "><i class="fa fa-facebook-f "></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-primary mb-2 " style="background-color:rgb(250, 58, 202); " href=" " role="button "><i class="fa fa-instagram "></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="btn btn-primary btn-floating " style="background-color: #55acee " href="#! " role="button "><i class="fa fa-twitter "></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>            
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js " integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin=" anonymous "></script>
+    <!-- <script src="./JS/navbar.js "></script> -->
+    <script src="./JS/navbar.js"></script>
+    <script src="./JS/footer.js "></script>
+    <script src="./JS/cardCarousel.js "></script>
+    <script src="./JS/storage.js "></script>
+
+    <!-- <script src="./JS/searchall.js "></script> -->
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+
+        let searchSelected; 
+        $("#searchSelect").on("change", function() {
+            searchSelected = $("#searchSelect").find(":selected").text()
+        });
+
+
+        $('document').ready(function() {
+            $('a').click(function() {
+                console.log("*");
+            });
+
+
+            const api_url = "http://192.168.160.58/Formula1/api/Search/All"
+
+            $("#searchbar").autocomplete({
+                minLength: 2,
+                source: function(request, response) {
+                    $.ajax({
+                        type: "GET",
+                        url: api_url,
+                        data: {
+                            q: $('#searchbar').val().toLowerCase()
+                        },
+                        success: function(data) {
+                            if (!data.length) {
+                                var result = [{
+                                    label: 'No matches found',
+                                    value: response.term,
+                                    source: " "
+                                }];
+                                response(result);
+                            } else {
+
+                                var nData = $.map(data, function(value, key) {
+                                    return {
+                                        label: value.Text,
+                                        value: value.Id,
+                                        source: value.Source
+                                    }
+                                });
+                                results = $.ui.autocomplete.filter(nData, request.term);
+                                response(results);
+                            }
+                        },
+                        error: function() {
+                            alert("error!");
+                        }
+                    })
+                },
+                select: function(event, ui) {
+                    event.preventDefault();
+                    $("#searchbar").val(ui.item.label);
+
+                    switch (searchSelected) {
+                        case "Race":
+                            window.location.href = "./raceDetails.html?id=" + ui.item.value;
+                            break;
+                        case "Constructor":
+                            window.location.href = "./constructorDetails.html?id=" + ui.item.value;
+                            break;
+                        case "Driver":
+                            window.location.href = "./driverDetails.html?id=" + ui.item.value;
+                            break;
+                        case "Circuit":
+                            window.location.href = "./circuitDetails.html?id=" + ui.item.value;
+                            break;
+                        default:
+                            break;
+                    }
+                    // h.loadTitleModal(ui.item.value)
+                },
+                focus: function(event, ui) {
+                    $("#searchbar").val(ui.item.label);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>

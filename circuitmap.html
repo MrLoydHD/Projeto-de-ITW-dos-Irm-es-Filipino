@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Página Inicial</title>
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="/Content/themes/base/datepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['geochart'],
+        });
+
+        google.charts.setOnLoadCallback(drawRegionsMap);
+
+        function drawRegionsMap() {
+
+            var data = google.visualization.DataTable()
+            data.addColumn('string', 'Country')
+            data.addColumn('number', 'Number of Circuits')
+            data.addColumn('number', 'Id')
+
+            var jsonData = $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "http://192.168.160.58/Formula1/api/Countries?page=1&pagesize=200",
+                async: false
+            }).responseText;
+
+            var jsonData = JSON.parse(jsonData).Countries
+
+            var tableData = []
+
+            jsonData.forEach(element => {
+                var temp = []
+                temp[0] = element.Name
+                temp[1] = element.Titles
+                temp[2] = element.Id
+
+                tableData.push(temp)
+            });
+
+
+            var options = {};
+
+            var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="regions_div" style="width: 900px; height: 500px;">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js " integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin=" anonymous "></script>
+</body>
+<!--<script>
+        google.load('visualization', '1.0', {
+            'packages': ['geochart'],
+            'mapsApiKey': 'AIzaSyBaFfw60k7yk6qpnyNG6mz-M4BHoLHV1TU'
+        });
+
+        google.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = new google.visualization.DataTable()
+            data.addColumn('string', 'Country')
+            data.addColumn('number', 'Number of Titles')
+            data.addColumn('number', 'Id')
+
+
+            var jsonData = $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "http://192.168.160.58/netflix/api/Countries?page=1&pagesize=200",
+                async: false
+            }).responseText;
+
+            var jsonData = JSON.parse(jsonData).Countries
+
+            var tableData = []
+
+            jsonData.forEach(element => {
+                var temp = []
+                temp[0] = element.Name
+                temp[1] = element.Titles
+                temp[2] = element.Id
+
+                tableData.push(temp)
+            });
+            data.addRows(tableData)
+            var options = {
+                width: 900,
+                height: 700,
+                colorAxis: {
+                    colors: ['#da2f37']
+                },
+                backgroundColor: {
+                    fill: 'transparent'
+                },
+                legend: 'none'
+            };
+            // Create and draw the visualization.
+            visualization = new google.visualization.GeoChart(document.getElementById('mapChart'));
+
+            google.visualization.events.addListener(visualization, 'select', function() {
+                try {
+                    var id = data.getValue(visualization.getSelection()[0].row, 2);
+                    t.mapSelect(id, 1, clearData = true)
+                } catch (error) {
+
+                }
+            });
+
+            visualization.draw(data, options);
+        }
+    </script>-->

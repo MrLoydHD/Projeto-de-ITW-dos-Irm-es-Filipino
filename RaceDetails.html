@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW 2021/22 - Driver Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/mycss.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">F1Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="drivers.html">Drivers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="constructors.html">Constructors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Work Area-->
+    <div class="container">
+        <div class="py-2 mb-3">
+            <h2 data-bind="text:Name() +' ['+RaceId()+']'"></h2>
+        </div>
+        <!-- ko if:Name().length > 0 -->
+        <table class="table table-sm small">
+            <tr class="row">
+                <th class="col-md-2">Race ID</th>
+                <td class="col-md-10" data-bind="text: RaceId"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Circuit</th>
+                <td class="col-md-10" data-bind="text: Circuit"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Year</th>
+                <td class="col-md-10" data-bind="text: Year"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Round</tr>
+            <td class="col-md-10" data-bind="text: Round"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Name</th>
+                <td class="col-md-10" data-bind="text: Name"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Date</th>
+                <td class="col-md-10" data-bind="text: Date"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Time</th>
+                <td class="col-md-10" data-bind="text: Time"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Url</th>
+                <td class="col-md-10"><a class="text-muted text-decoration-none" data-bind="attr: {href: Url, target:'blank'}"><i class="fa fa-external-link"></i> [<span class="" data-bind="text: Url"></span>]</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="small" data-bind="foreach: Results">
+                    <div class="border rounded d-inline-block mr-2 mb-1 p-1"><i class=" fa fa-dot-circle-o"></i>
+                        <a class="text-muted text-decoration-none" data-bind="text: DriverName + ' (' + Position + ')' + ' ' + Status , attr: { href: './driverDetails.html?id=' +  DriverId }"></a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <!-- /ko -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <img src="./images/F1_logo.png" height="30" /> Loading data...
+                    </h5>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fa fa-spin fa-3x fa-refresh"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Work Area -->
+    <nav class="navbar navbar-light bg-light fixed-bottom">
+        <div class="container small">
+            <div class="navbar-text">&copy; Introdução as Tecnologias Web - 2021/22</div>
+            <div class="navbar-text">Made with <i class="fa fa-heart-o text-danger"></i> for U by <a href="mailto:jsp@ua.pt" class="text-decoration-none text-muted">jsp@ua.pt</a>.</div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.ua.pt" class="nav-link">Universidade de Aveiro</a></div>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js " integrity="sha256-hlKLmzaRlE8SCJC1Kw8zoUbU8BxA+8kR3gseuKfMjxA=" crossorigin=" anonymous "></script>
+    <script src="./JS/raceDetails.js"></script>
+</body>
+
+</html>

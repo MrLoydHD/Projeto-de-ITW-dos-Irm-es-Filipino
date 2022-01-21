@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Página Inicial</title>
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><img src="./Imagens/FIA_F1/f1_logo_red.svg" alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section id="contact">
+                        <div class="container-lg">
+                            <div class="text-center">
+                                <h1 style="font-family: 'Faster One'; color: rgb(209, 12, 12);">Register</h1>
+                            </div>
+                            <div class="row justify-content-center my-5">
+                                <div class="col-lg-9">
+                                    <form>
+                                        <div class="input-group mb-4">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-envelope-fill text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating " style="width: 400px;">
+                                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                                <label for="floatingInput">Email address</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-person-fill text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating " style="width: 400px;">
+                                                <input type="text" id="Nome" class="form-control" placeholder="e.g. Mario" />
+                                                <label for="floatingInput">Name</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-eye-slash text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating " style="width: 400px;">
+                                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword">Password</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Your safe-key.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-eye-slash text-secondary"></i>
+                                            </span>
+                                            <div class="form-floating " style="width: 400px;">
+                                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                                <label for="floatingPassword">Confirm Password</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Literally the same thing.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 input-group" style="width: 482px;">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-bank text-secondary"></i>
+                                            </span>
+                                            <select class="form-select" id="subject">
+                                                <option value="pricing" selected><i class="bi bi-credit-card"></i>CreditCard</option>
+                                                <option value="content"><i class="bi bi-paypal"></i>Paypal</option>
+                                                <option value="other">Other method</option>
+                                            </select>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text">
+                                                <span class="tt" data-bs-placement="bottom" title="Payment method.">
+                                                    <i class="bi bi-question-circle text-muted"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4" style="width: 482px;">
+                                            <label for="formFile" class="form-label">Proof of Identity</label>
+                                            <input class="form-control" type="file" id=" formFile ">
+                                        </div>
+                                        <div class="mb-4 input-group " style="width: 482px; ">
+                                            <span class="input-group-text ">
+                                                <i class="bi bi-eye-slash text-secondary "></i>
+                                            </span>
+                                            <div class="form-floating " style="width: 400px; ">
+                                                <input type="date" class="form-control " id="floatingDate " placeholder="Nascimento ">
+                                                <label for="floatingDate ">Data de Nascimento</label>
+                                            </div>
+                                            <!-- tooltip -->
+                                            <span class="input-group-text ">
+                                                <span class="tt " data-bs-placement="bottom " title="BirthDate ">
+                                                    <i class="bi bi-question-circle text-muted "></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="mb-4 text-center ">
+                                            <input type="Submit" value="Enviar" class="btn btn-danger" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Scripts/bootstrap.bundle.min.js "></script>
+    <script src="/Scripts/knockout-3.5.1.js "></script>
+    <script src="/Scripts/jquery-ui-1.13.0.min.js "></script>
+    <script src="/Scripts/jquery-3.6.0.min.js "></script>
+    <script src="./JS/Validation.js"></script>
+</body>
+<script>
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+    })
+</script>
+
+</html>
